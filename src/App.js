@@ -10,22 +10,44 @@ function App() {
 
   const [alert, setalert] = useState(null);
 
+  const showAlert = (message, type) => {
+
+    setalert({
+      msg: message,
+      type: type,
+    })
+    
+    if(type==="warning"){
+      setTimeout(() => {
+        setalert(null);
+        },3000)
+    }
+    else{
+      setTimeout(() => {
+        setalert(null);
+      },1500)
+    }
+      
+  }
+
   const toggleMode = () => {
     if(mode==="light"){
       setmode('dark')
       document.body.style.backgroundColor = 'black'
+      showAlert("Dark Mode is Enabled", "success")
     }
     else{
       setmode('light')
       document.body.style.backgroundColor = 'white'
+      showAlert("Dark Mode is Diabled", "success")
     }
   }
 
   return (
     <>
       <Navbar title = 'EEBER' mode={mode} toggleMode={toggleMode}/>
-      <Alert alert='This is alert' />
-      <Form heading = 'Box' mode={mode}/>
+      <Alert alert={alert} />
+      <Form heading = 'Box' mode={mode} alert={showAlert}/>
       {/*<About/>*/}
 
     </>

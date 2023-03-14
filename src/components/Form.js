@@ -12,25 +12,52 @@ export default function Form(props) {
 		//console.log("Upper case was clicked");
 		let upperText = text.toUpperCase();
 		settext(upperText);
+		props.alert("Converted to uppercase", "success");
 	}
 
 	const handleLowClick = () => {
 		//console.log("Upper case was clicked");
 		let lowerText = text.toLowerCase();
 		settext(lowerText);
+		props.alert("Converted to lowercase", "success");
 	}
 
 	const handleCopyClick = () => {
 		navigator.clipboard.writeText(text);
+		props.alert("Copied", "success");
 	}
 
+	const [clear, setClear] = useState(false)
+
 	const handleClearClick = () => {
-		settext('');
+		if(clear===false){
+			setClear(true);
+			props.alert("are you sure ?? press again to clear", "warning");
+		}
+		else{
+			setClear(false);
+			settext('');
+		}
+		
+
+
 	}
 
 	const onChangeHandler = (event) => {
 		//console.log('on Change');
 		settext(event.target.value);
+	}
+
+	const wordCounter = (text) => {
+		let words = 0;
+
+		for(let word of text.split(" ")){
+			if(word==="")
+				continue
+			words+=1;
+		}
+		console.log(words)
+		return(words)
 	}
 
 	return(
@@ -48,7 +75,7 @@ export default function Form(props) {
 
 			<div className="container my-2 " style={{color : props.mode==='light'?'black':'white'}}>
 				<h1>Your text symmary :</h1>
-				<p>{text.split(" ").length} words, {text.length} characters</p>
+				<p>{text.length===0?'0':wordCounter(text)} words, {text.length} characters</p>
 				<h2>Preview :</h2>
 				<p>{text.length>0?text:'Enter something in the text box above to preview here'}</p>
 			</div>
