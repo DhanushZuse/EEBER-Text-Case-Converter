@@ -23,8 +23,6 @@ export default function Form(props) {
 	}
 
 	const handleCopyClick = () => {
-		//text.select();
-		//text.setSelectionRange(0, 99999);
 		navigator.clipboard.writeText(text);
 		props.alert("Copied", "success");
 	}
