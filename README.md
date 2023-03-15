@@ -1,4 +1,4 @@
-# Text Case Converter
+# Text Case Converter  live preview: https://dhanushzuse.github.io/Text-Case-Converter/
 
 A basic react application to convert the case of the entered text to upper or lower
 
