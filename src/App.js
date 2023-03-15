@@ -62,8 +62,8 @@ function App() {
       </div>
       
         <Routes>
-            <Route path="/about" element ={ <About mode={mode}/> }/>
-            <Route path="/" element ={ <Form heading = 'Box' mode={mode} alert={showAlert} /> }/>
+            <Route path="/Text-Case-Converter/about/" element ={ <About mode={mode}/> }/>
+            <Route path="/Text-Case-Converter/" element ={ <Form heading = 'Box' mode={mode} alert={showAlert} /> }/>
         </Routes>
       
       
