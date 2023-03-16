@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Text-Case-Converter/static/css/main.073c9b0a.css",
-    "main.js": "/Text-Case-Converter/static/js/main.8e9d402c.js",
-    "static/js/787.e847c3be.chunk.js": "/Text-Case-Converter/static/js/787.e847c3be.chunk.js",
-    "index.html": "/Text-Case-Converter/index.html",
-    "main.073c9b0a.css.map": "/Text-Case-Converter/static/css/main.073c9b0a.css.map",
-    "main.8e9d402c.js.map": "/Text-Case-Converter/static/js/main.8e9d402c.js.map",
-    "787.e847c3be.chunk.js.map": "/Text-Case-Converter/static/js/787.e847c3be.chunk.js.map"
+    "main.css": "/EEBER-Text-Case-Converter/static/css/main.073c9b0a.css",
+    "main.js": "/EEBER-Text-Case-Converter/static/js/main.7360012f.js",
+    "static/js/787.148f22b8.chunk.js": "/EEBER-Text-Case-Converter/static/js/787.148f22b8.chunk.js",
+    "index.html": "/EEBER-Text-Case-Converter/index.html",
+    "main.073c9b0a.css.map": "/EEBER-Text-Case-Converter/static/css/main.073c9b0a.css.map",
+    "main.7360012f.js.map": "/EEBER-Text-Case-Converter/static/js/main.7360012f.js.map",
+    "787.148f22b8.chunk.js.map": "/EEBER-Text-Case-Converter/static/js/787.148f22b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.8e9d402c.js"
+    "static/js/main.7360012f.js"
   ]
 }
