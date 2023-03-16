@@ -6,13 +6,13 @@ export default function About(props) {
 		if(props.mode==='light'){
 			return({
 				color: 'black',
-				backgroundColor: 'white'
+				backgroundColor: props.color
 			})
 		}
 		else{
 			return({
 				color: 'white',
-				backgroundColor: 'black'
+				backgroundColor: props.color
 			})
 		}
 	}
@@ -25,36 +25,39 @@ export default function About(props) {
 			  <div className="accordion-item" >
 			    <h2 className="accordion-header" id="headingOne">
 			      <button style={mystyle()} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			        Accordion Item #1
+			        <strong>Description</strong>
 			      </button>
 			    </h2>
 			    <div style={mystyle()} id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 			      <div className="accordion-body">
-			        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			        <strong>EEBER - Text Case Converter,</strong> A react application used to convert the case of the text entered with a clean Interface.
 			      </div>
 			    </div>
 			  </div>
 			  <div className="accordion-item">
 			    <h2 className="accordion-header" id="headingTwo">
 			      <button style={mystyle()} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			        Accordion Item #2
+			        <strong>Features</strong>
 			      </button>
 			    </h2>
 			    <div style={mystyle()} id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 			      <div className="accordion-body">
-			        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			        Copy text, Upper-case conversion, Lower-case conversion and Dark mode.<br/>
+			        !!! Dont miss to checkout the Dark mode.
 			      </div>
 			    </div>
 			  </div>
 			  <div className="accordion-item">
 			    <h2 className="accordion-header" id="headingThree">
 			      <button style={mystyle()} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			        Accordion Item #3
+			        <strong>Creator Info</strong>
 			      </button>
 			    </h2>
 			    <div style={mystyle()} id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 			      <div className="accordion-body">
-			        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			      	<strong>EEBER</strong> --by<br/>
+			        <strong>Creator :</strong> Dhanush <br/>
+			       	<strong>GitHub :</strong> <a href='https://github.com/DhanushZuse'>https://github.com/DhanushZuse</a>
 			      </div>
 			    </div>
 			  </div>

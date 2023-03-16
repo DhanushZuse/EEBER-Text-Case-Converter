@@ -15,6 +15,8 @@ function App() {
 
   const [alert, setalert] = useState(null);
 
+  const [color, setcolor] = useState('white');
+
   const showAlert = (message, type) => {
 
     setalert({
@@ -37,7 +39,9 @@ function App() {
 
   const setBg = (color) => {
       document.body.style.backgroundColor = color;
+      setcolor(color)
       showAlert("To reset Enable or Diabled Dark mode", "warning")
+
   
   }
 
@@ -45,11 +49,13 @@ function App() {
     if(mode==="light"){
       setmode('dark')
       document.body.style.backgroundColor = 'black'
+      setcolor('black')
       showAlert("Dark Mode is Enabled", "success")
     }
     else{
       setmode('light')
       document.body.style.backgroundColor = 'white'
+      setcolor('white')
       showAlert("Dark Mode is Diabled", "success")
     }
   }
@@ -62,8 +68,8 @@ function App() {
       </div>
       
         <Routes>
-            <Route path="/Text-Case-Converter/about/" element ={ <About mode={mode}/> }/>
-            <Route path="/Text-Case-Converter/" element ={ <Form heading = 'Box' mode={mode} alert={showAlert} /> }/>
+            <Route path="/EEBER-Text-Case-Converter/about/" element ={ <About mode={mode} color={color}/> }/>
+            <Route path="/EEBER-Text-Case-Converter/" element ={ <Form heading = 'Try EEBER - Text Case Converter - word count, character count, etc' mode={mode} alert={showAlert} /> }/>
         </Routes>
       
       
