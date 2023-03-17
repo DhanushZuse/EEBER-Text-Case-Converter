@@ -57,7 +57,7 @@ export default function Form(props) {
 	const wordCounter = (text) => {
 		let words = 0;
 
-		for(let word of text.split(" ")){
+		for(let word of text.split(/\s+/)){
 			if(word==="")
 				continue
 			words+=1;
